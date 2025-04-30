@@ -1,0 +1,24 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const itens = document.querySelectorAll('.elementor-icon-list-item');
+
+  itens.forEach(item => {
+    const textoEl = item.querySelector('.elementor-icon-list-text');
+    if (!textoEl) return;
+
+    const texto = textoEl.textContent;
+
+    if (texto.includes("Capacidade")) {
+      const match = texto.match(/\d+/); // Procura número inteiro no texto
+      if (match) {
+        const valor = parseInt(match[0]);
+        if (valor >= 1000) {
+          const litros = valor / 1000;
+          const novoTexto = texto.replace(match[0], litros + "L").replace('ml', '');
+          textoEl.textContent = novoTexto;
+        }
+      }
+    }
+  });
+});
+</script>

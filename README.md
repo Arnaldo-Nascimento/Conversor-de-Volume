@@ -1,10 +1,10 @@
 # conversor
 Conversor Automático de Capacidade (ml / L)
 
-Utilizei este script em um site onde o cliente cadastra suas embalagens, que vão desde 10ml até 2,5L.
+Utilizei este script em um site onde o cliente cadastra suas embalagens, que vão desde 5ml até 2,5L.
 O cadastro no painel administrativo é feito sempre com números inteiros, como:
 
-10 (para representar 10ml)
+5 (para representar 5ml)
 
 2500 (para representar 2,5L)
 
